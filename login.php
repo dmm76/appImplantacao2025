@@ -6,7 +6,7 @@ if (isset($_POST['cpf'], $_POST['senha']) && !empty($_POST['cpf']) && !empty($_P
     $cpf = strtolower(trim($_POST['cpf'])); // Converte para minúsculas
     $senha = trim($_POST['senha']);
 
-    $sql = "SELECT nome, cpf, senha, tipo FROM usuario WHERE cpf = ?";
+    $sql = "SELECT nome, cpf, senha, tipo FROM usuario WHERE nome = ?";
     $stmt = $mysqli->prepare($sql);
 
     if ($stmt) {
