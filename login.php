@@ -3,7 +3,7 @@ session_start();
 include "conecta.php";
 
 if (isset($_POST['cpf'], $_POST['senha']) && !empty($_POST['cpf']) && !empty($_POST['senha'])) {
-    $nome = strtolower(trim($_POST['cpf'])); // Converte para minúsculas
+    $nome = strtolower(trim($_POST['nome'])); // Converte para minúsculas
     $senha = trim($_POST['senha']);
 
     $sql = "SELECT nome, cpf, senha, tipo FROM usuario WHERE nome = ?";
