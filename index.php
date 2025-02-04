@@ -19,8 +19,8 @@
                     </div>
                     <div class="card-body text-start">
                         <form action="login.php" method="post">
-                            <label class="form-label"><b>Nome</b></label>
-                            <input class="form-control" type="text" name="nome" required/>
+                            <label class="form-label"><b>CPF</b></label>
+                            <input class="form-control" type="text" name="cpf" required/>
                             <br/>
                             <label class="form-label"><b>SENHA</b></label>
                             <input class="form-control" type="password" name="senha" required/>
